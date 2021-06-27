@@ -18,7 +18,7 @@ const Signin = (props) => {
 
     AuthService.login(email, password).then(
       (e) => {
-        props.history.push("/profile");
+        props.history.push("/admin");
         window.location.reload();
       },
       () => {
@@ -37,7 +37,7 @@ const Signin = (props) => {
             alt="Workflow"
           />
           <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
-            Connectez-vous à votre compte
+            CASETY - Administateur
           </h2>
         </div>
         {errorMessage && (
